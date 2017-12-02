@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>style.css</file>
+        <file>basichtml.html</file>
+        <file>menu.html</file>
+        <file>other.html</file>
+        <file>self.html</file>
+        <file>beauty_vk.png</file>
+        <file>back_blue.jpg</file>
+        <file>logo/logo.png</file>
+        <file>logo/logo_form.png</file>
+        <file>other_images/down_mess.png</file>
+        <file>other_images/here.png</file>
+        <file>other_images/left_friends.png</file>
+        <file>wallPost.html</file>
+        <file>wallRepost.html</file>
+    </qresource>
+</RCC>
