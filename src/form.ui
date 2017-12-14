@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>590</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>900</width>
+    <height>590</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/beauty_vk.png</normaloff>:/beauty_vk.png</iconset>
+  </property>
+  <widget class="QListWidget" name="l_contacts">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>201</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: 'Tahoma';
+font-size: 0.9rem;
+color: #5e5e5e;
+background-color: rgb(243, 242, 255);
+border: none;</string>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="progressBar">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>540</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>WaitCursor</cursorShape>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+  </widget>
+  <widget class="Chat" name="chat" native="true">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>10</y>
+     <width>681</width>
+     <height>551</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <widget class="myQTextEdit" name="t_edit">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>500</y>
+      <width>621</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="cursor" stdset="0">
+     <cursorShape>IBeamCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: 'Tahoma';
+font-size: 0.8rem;
+color: #5e5e5e;
+background-color: rgb(243, 242, 255);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b_sent">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>622</x>
+      <y>501</y>
+      <width>61</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: none;
+border: none;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>t_edit</zorder>
+   <zorder>b_sent</zorder>
+   <zorder>wall</zorder>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>201</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>500</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="home">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>510</y>
+     <width>191</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #507299;
+border: none;
+font: 75 13pt &quot;Latha&quot;;
+color: rgb(255, 255, 255);
+border-radius: 8px;
+background: url(home.png)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="Chat" name="page" native="true">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>10</y>
+     <width>681</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <widget class="QPushButton" name="wallButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>330</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #507299;
+border: none;
+font: 75 13pt &quot;Latha&quot;;
+color: rgb(255, 255, 255);
+border-radius: 8px;</string>
+    </property>
+    <property name="text">
+     <string>К стене</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="dialogButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>380</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #507299;
+border: none;
+font: 75 13pt &quot;Latha&quot;;
+color: rgb(255, 255, 255);
+border-radius: 8px;</string>
+    </property>
+    <property name="text">
+     <string>К диалогу</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>310</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <zorder>dialogButton</zorder>
+   <zorder>wallButton</zorder>
+   <zorder>line_2</zorder>
+  </widget>
+  <widget class="Chat" name="wall" native="true">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>10</y>
+     <width>681</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <widget class="QPushButton" name="profileButton">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>510</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(80, 114, 153, 195);
+border: none;
+font: 75 13pt &quot;Latha&quot;;
+color: rgb(255, 255, 255);
+border-radius: 8px;</string>
+    </property>
+    <property name="text">
+     <string>К профилю</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="dialogButton_2">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>510</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(80, 114, 153, 195);
+border: none;
+font: 75 13pt &quot;Latha&quot;;
+color: rgb(255, 255, 255);
+border-radius: 8px;</string>
+    </property>
+    <property name="text">
+     <string>К диалогу</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="newMes">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>20</y>
+     <width>231</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <underline>false</underline>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Получено новое сообщение!</string>
+   </property>
+  </widget>
+  <zorder>l_contacts</zorder>
+  <zorder>progressBar</zorder>
+  <zorder>label_2</zorder>
+  <zorder>line</zorder>
+  <zorder>home</zorder>
+  <zorder>wall</zorder>
+  <zorder>page</zorder>
+  <zorder>chat</zorder>
+  <zorder>newMes</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>myQTextEdit</class>
+   <extends>QTextEdit</extends>
+   <header>myqtextedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>Chat</class>
+   <extends>QWidget</extends>
+   <header>chat.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

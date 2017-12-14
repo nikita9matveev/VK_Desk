@@ -13,15 +13,17 @@ w_login::w_login(QWidget *parent, QSharedPointer<vkConnect> _vk) :
     QWidget(parent),
     ui(new Ui::w_login)
 {
-	QPixmap logo(":/logo/logo.png");
-	ui->label->setPixmap(logo);
-	ui->setupUi(this);
+    ui->setupUi(this);
     vk = _vk;
+    QPixmap logo(":/logo/logo.png");
+    ui->label->setPixmap(logo);
     connect(this, SIGNAL(sentQUrl(QUrl*)), vk.data(), SLOT(acceptLogin(QUrl*)));
 
 }
 w_login::~w_login()
 {
+    delete web;
+    vk.clear();
     delete ui;
 }
 

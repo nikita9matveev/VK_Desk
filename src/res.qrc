@@ -15,5 +15,9 @@
         <file>profileMenu.html</file>
         <file>profilePhoto.html</file>
         <file>wallMenu.html</file>
+        <file>home.png</file>
+        <file>wallEmpty.html</file>
+        <file>chatEmpty.html</file>
+        <file>send.png</file>
     </qresource>
 </RCC>

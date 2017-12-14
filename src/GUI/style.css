@@ -4,7 +4,7 @@
 html, body {
     background-color: #cfe4e9;
     background-image: url(back_blue.jpg)
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', 'Tahoma', sans-serif;
     margin: 0px 0px;
     margin-bottom: 110px;
     width: 681px;
@@ -66,9 +66,8 @@ a{
 .profile .profilePhoto {
 	display: block;
 	position: absolute;  
-	top: 70px; 
-	width: 30%;
-	
+	top: 100px; 
+	width: 30%;	
 }
 .profile img{
 	display: block;
@@ -85,14 +84,75 @@ a{
     max-width: 320px;
 	max-height: 400px;
 	position: absolute; 
-	right: 120px; 
-	top: 70px; 
-	width: 50%;
+	right: 183px; 
+	top: 80px; 
+	width: 70%;
+	font-family: 'Tahoma';
+	font-size: 0.9rem;
+    color: #5e5e5e;
 }
-
+.profileInfo .status{
+	display: inline-block;
+	width: auto;
+	font-size: 1rem;
+    color: #5e5e5e;
+    word-wrap: break-word;
+} 
+.profileInfo hr{
+    border: none; /* Убираем границу */
+    background-color: #b0aeae; /* Цвет линии */
+    color: #b0aeae; /* Цвет линии для IE6-7 */
+    height: 1px; /* Толщина линии */
+}
+.profileInfo i{
+	margin-left: 10px
+}
+.profileInfo b:before{
+	content:"\f098";        /*трубка перед "Контакты"*/
+    color: #858585;
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-right: 4px;
+}
+.profileInfo .instagram:before{
+	content:"\f16d";        /*трубка перед "Контакты"*/
+    color: #858585;
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-right: 7px;
+}
+.profileInfo .twitter:before{
+	content:"\f099";        
+    color: #858585;
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-right: 7px;
+}
+.profileInfo .facebook:before{
+	content:"\f09a";        
+    color: #858585;
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-right: 7px;
+}
+.profileInfo .skype:before{
+	content:"\f17e";        
+    color: #858585;
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-right: 7px;
+}
+.profileInfo .website:before{
+	content:"\f0ac";        
+    color: #858585;
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-right: 7px;
+}
 /* W A L L */
 
 .wall {
+	font-family: 'Tahoma';
     list-style: none;
     background: none;
     margin: 0 0 0 1rem;
@@ -172,6 +232,7 @@ a{
 .wall .post .text {
     font-size: 0.9rem;
     color: #5e5e5e;
+    word-wrap: break-word;
 }
 .wall .post .wallPhoto img{
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
@@ -195,11 +256,27 @@ a{
 .wall .post .wallrepost .text {
 	font-size: 0.86rem;
     color: #666565;
+    word-wrap: break-word;
+}
+.wallEmpty{
+	display: block;
+	position: absolute;  
+	top: 200px; 
+	left: 295px;
+	font-size: 1.06rem;
+    color: #666565;
+}
+.wallEmpty img{
+	height: 99px;
+}
+.wallEmpty p{
+	margin-left: -90px;
 }
 
 /* M E S S A G E S */
 
 .chat {
+	font-family: 'Tahoma';
     list-style: none;
     background: none;
     margin: 0;
@@ -238,6 +315,20 @@ a{
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+}
+.chatEmpty{
+	display: block;
+	position: absolute;  
+	top: 200px; 
+	left: 295px;
+	font-size: 1.06rem;
+    color: #666565;
+}
+.chatEmpty img{
+	height: 99px;
+}
+.chatEmpty p{
+	margin-left: -90px;
 }
 
 .self .avatar {
