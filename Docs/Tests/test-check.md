@@ -288,8 +288,8 @@ API ВКонтакте запрещает отправлять пустые со
 
 Для отображения статистики работы запросов используется специальный метод API ВКонтакте. Результаты работы запросов отображаются в кабинете приложения на сайте vk.com. Доступ к кабинету имеет только разработчик. Далее приведена статистика:
 
-![]https://github.com/nikita9matveev/VK_Desk/blob/master/Docs/Tests/Stats/all.png
-![]https://github.com/nikita9matveev/VK_Desk/blob/master/Docs/Tests/Stats/errors.png
+![](https://github.com/nikita9matveev/VK_Desk/blob/master/Docs/Tests/Stats/all.png)
+![](https://github.com/nikita9matveev/VK_Desk/blob/master/Docs/Tests/Stats/errors.png)
 
 4. Процент ошибок должен стремиться к нулю (показания около 4% являются нормальными) и среднее время работы запросов должно быть в пределах 0,5 секунды.
 5. Процент ошибок равен нулю, среднее время работы запросов составляет 5 мс.
